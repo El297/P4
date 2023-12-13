@@ -1,0 +1,150 @@
+/*DEVELOPER:Emma Lee, IS117-001, Fall, 2023 */
+/**CSS for all other pages excluding the index**/
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+header{
+    padding: 1.5em 0 2em 0;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+a img{
+    margin:0 auto;    
+   display:block;
+}
+/** Header CSS**/
+header h2{
+    text-align: center;
+}
+/** styles for navigation menu **/
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+    z-index: 2;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color:#5791B7 ;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+	width:100%;
+}
+#nav_menu li {
+	float: left;
+    width: 20%;
+}
+#nav_menu li a{
+	display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #5791B7;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+	width: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/** CSS for CARD **/
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1em;
+    color: #555;
+}
+/**article css **/
+article img{
+    float: right;
+    margin: 1% 0 2% 2%;
+    border: 1px solid black;
+    max-width: 30%;
+    min-width: 150px;
+}
+/* the styles for the footer */
+footer {
+	background-color: #5791B7;
+	clear: both;
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+footer p.one {
+    text-indent: 30px;
+}
+.center{
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.large-image {
+    width: 300px;
+    height: auto; 
+}
+/** Media Query **/
+@media only screen and (max-width: 767px) {
+    /* Styles for smaller screens go here */
+
+    main img {
+        max-width: 100%; /* Adjust as needed for smaller screens */
+        margin: 2% auto;
+    }
+
+    main p {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}

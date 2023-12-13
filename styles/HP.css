@@ -1,0 +1,129 @@
+/*DEVELOPER:Emma Lee, IS117-001, Fall, 2023 */
+/** CSS for the index **/
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+header{
+    padding: 1.5em 0 2em 0;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+a img{
+    margin:0 auto;    
+   display:block;
+}
+
+/** Header CSS **/
+header h2{
+    text-align: center;
+}
+/** styles for navigation menu **/
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul li a {
+    display: block;
+    width: 160px;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color:#5791B7 ;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+	width:100%;
+}
+#nav_menu li {
+	float: left;
+    width: 20%;
+}
+#nav_menu li a{
+	display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #5791B7;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+	width: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/** Main css **/
+main h2{
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+}
+main img {
+    max-width: 100%;
+    display: block;
+    margin: 2% auto;
+}
+.center{
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+ main p{
+    font-family: "Lucida Console", "Courier New", monospace;
+    text-align: center;
+    font-size: larger;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-bottom: 20px;
+    padding-top: 50px;
+  }
+/* the styles for the footer */
+footer {
+	background-color: #5791B7;
+	clear: both;
+
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
+footer p.one {
+    text-indent: 30px;
+  }
+/** Media Query **/
+@media only screen and (max-width: 767px) {
+    /* Styles for smaller screens go here */
+
+    main img {
+        max-width: 100%; /* Adjust as needed for smaller screens */
+        margin: 2% auto;
+    }
+
+    main p {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}
