@@ -116,14 +116,14 @@ footer p.one {
   }
 /** Media Query **/
 @media only screen and (max-width: 767px) {
-    /* Styles for smaller screens go here */
+
 
     main img {
-        max-width: 100%; /* Adjust as needed for smaller screens */
+        max-width: 100%; 
         margin: 2% auto;
     }
 
     main p {
-        padding: 20px; /* Adjust padding for smaller screens */
+        padding: 20px; 
     }
 }
